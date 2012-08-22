@@ -4,7 +4,7 @@ SceneManager.setupStats = function() {
     this.stats = new Stats();
     this.stats.domElement.style.position = 'absolute';
     this.stats.domElement.style.bottom = '0px';
-    document.body.appendChild(this.stats.domElement);
+    $(document.body).append(this.stats.domElement);
 }
 
 SceneManager.setupRenderer = function() {
@@ -22,7 +22,7 @@ SceneManager.setupRenderer = function() {
     }
     
     this.renderer.setSize( window.innerWidth, window.innerHeight );
-    $('#glContainer').appendChild(this.renderer.domElement);
+    $('#glContainer').append(this.renderer.domElement);
 }
 
 SceneManager.setupScene = function() {
