@@ -15,12 +15,19 @@
 <body>
     <div id="glContainer"></div>
     <div id="info">
-    
     </div>
     
     <script type="text/javascript">
         $(document).ready(function() {
-            SceneManager.init();
+            
+            if (Detector.webgl) {
+                SceneManager.init();
+                SceneManager.animate();
+            }
+            else
+            {
+                alert("Sorry!  Your browser doesn't support WebGL.  You're probably using IE.  Switch to Chrome or Firefox!");
+            }
         });
     </script>
 </body>

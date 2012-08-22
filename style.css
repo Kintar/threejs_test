@@ -1,5 +1,10 @@
 #info {
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     padding: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
